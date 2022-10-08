@@ -1,8 +1,9 @@
     
 <!DOCTYPE html>
 <html lang="en">
-<head>    
+<head>
 </head>   
+	<body style="background-color:grey;">
 <center>	
 <div id="page-wrapper">
     <div class="container-fluid">
@@ -24,102 +25,7 @@
                         </div>
                     </div>
 	</center>
-
-<script src="/js/jquery.js"></script>
-<script src="/Scripts/jquery-1.8.2.min.js"></script>
-<script type="text/javascript">
-    function copyToClipboard(text_val) {
-
-        var $temp = $("<textarea>");
-        var brRegex = /<br\s*[\/]?>/gi;
-        $("body").append($temp);
-        $temp.val(text_val.replace(brRegex, "\r\n")).select();
-        document.execCommand("copy");
-        $temp.remove();
-
-    }
-
-    $(document).ready(function () {
-        $(".copyCode").click(function (e) {
-            copyToClipboard(($(this).parent('div').find('input')).val().trim());
-            $(".copyCode").removeClass("btn-warning").addClass("btn-default");
-            $(this).addClass("btn-warning").removeClass("btn-default");
-        });
-
-    });
-</script>
-        
-
-
-     <div class="modal fade" id="SuccessModel" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
-     <div class="modal-dialog">
-	 <div class="modal-content">
-		<div class="modal-header">
-			<button type="button" id="closeSuccess" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>	
-		</div>
-			<div class="modal-body">
-			 <h3 class="text-success"><i class="fa fa-thumbs-up"></i> <label id="SuccessTitle"></label> </h3>
-              <div class="alert alert-success"  id="SuccessMsg">
-     
-              </div>
-      
-		</div>
-		
-	 </div>
-    </div>
-</div>
-
-     <div class="modal fade" id="ErrorModel" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
-     <div class="modal-dialog">
-	 <div class="modal-content">
-		<div class="modal-header">
-			<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>	
-		</div>
-		<div class="modal-body">
-			 <h3 class="text-success"><i class="fa fa-thumbs-down"></i> <label id="ErrorTitle"></label> </h3>
-              <div class="alert alert-danger"  id="ErrorMsg">
-     
-              </div>
-		</div>
-		
-	 </div>
-    </div>
-</div>
-          <div id="divProgressBar" ></div>
-
-        <!-- ============================================================== -->
-        <!-- End Page Content -->
-        <!-- ============================================================== -->
-    </div>
-
-    <!-- ============================================================== -->
-    <!-- End Wrapper -->
-    <!-- ============================================================== -->
-    <!-- ============================================================== -->
-    <!-- All Jquery -->
-    <!-- ============================================================== -->
-    <script src="/MemberContent/plugins/bower_components/jquery/dist/jquery.min.js"></script>
-    <!-- Bootstrap Core JavaScript -->
-    <script src="/MemberContent/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- Menu Plugin JavaScript -->
-    <script src="/MemberContent/plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
-    <!--slimscroll JavaScript -->
-    <script src="/MemberContent/js/jquery.slimscroll.js"></script>
-    <!--Wave Effects -->
-    <script src="/MemberContent/js/waves.js"></script>
-    <!--Counter js -->
-    <script src="/MemberContent/plugins/bower_components/waypoints/lib/jquery.waypoints.js"></script>
-    <script src="/MemberContent/plugins/bower_components/counterup/jquery.counterup.min.js"></script>
-    <!-- chartist chart -->
-    <script src="/MemberContent/plugins/bower_components/chartist-js/dist/chartist.min.js"></script>
-    <script src="/MemberContent/plugins/bower_components/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.min.js"></script>
-    <!-- Sparkline chart JavaScript -->
-    <script src="/MemberContent/plugins/bower_components/jquery-sparkline/jquery.sparkline.min.js"></script>
-    <!-- Custom Theme JavaScript -->
-    <script src="/MemberContent/js/custom.min.js"></script>
-    <script src="/MemberContent/js/dashboard1.js"></script>
-    <script src="/MemberContent/plugins/bower_components/toast-master/js/jquery.toast.js"></script>
-<script src="/Scripts/common_function.js"></script>
+	<script src="/Scripts/common_function.js"></script>
 </body>
 
 
