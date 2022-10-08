@@ -1,0 +1,741 @@
+    
+<!DOCTYPE html>
+<html lang="en">
+<!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" sizes="16x16" href="/MemberContent/plugins/images/favicon.png">
+    <!-- Bootstrap Core CSS -->
+    <link href="/MemberContent/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Menu CSS -->
+    <link href="/MemberContent/plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.css" rel="stylesheet">
+    <!-- toast CSS -->
+    <link href="/MemberContent/plugins/bower_components/toast-master/css/jquery.toast.css" rel="stylesheet">
+    <!-- morris CSS -->
+    <link href="/MemberContent/plugins/bower_components/morrisjs/morris.css" rel="stylesheet">
+    <!-- chartist CSS -->
+    <link href="/MemberContent/plugins/bower_components/chartist-js/dist/chartist.min.css" rel="stylesheet">
+    <link href="/MemberContent/plugins/bower_components/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.css" rel="stylesheet">
+    <!-- Calendar CSS -->
+    <link href="/MemberContent/plugins/bower_components/calendar/dist/fullcalendar.css" rel="stylesheet" />
+    <!-- animation CSS -->
+    <link href="/MemberContent/css/animate.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="/MemberContent/css/style.css" rel="stylesheet">
+    <!-- color CSS -->
+    <link href="/MemberContent/css/colors/default.css" id="theme" rel="stylesheet">
+
+    <link href="/MemberContent/css/materialdesignicons.min.css" rel="stylesheet" />
+    <title>Dapp4U-My Promotional Photos </title>   
+   <link href="/Content/common_style.css" rel="stylesheet" type="text/css" />
+    
+</head>
+
+<body class="fix-header">
+    <!-- ============================================================== -->
+    <!-- Preloader -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" />
+        </svg>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Wrapper -->
+    <!-- ============================================================== -->
+    <div id="wrapper">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <nav class="navbar navbar-default navbar-static-top m-b-0">
+            <div class="navbar-header">
+                <div class="top-left-part" style="text-align:center">
+                    <!-- Logo -->
+                    <a class="logo" href="/MyAccount/Dashboard">
+                        <!-- Logo icon image, you can use font-icon also -->
+                        <b>
+                            <img src="/images/logo-dashboard.png" class="logo-small" alt="home" />
+
+                        </b>
+                        <img src="/images/logo-dashboard.png" height="70px" alt="home" class="logo-full" />
+                    </a>
+                </div>
+                <!-- /Logo -->
+                <!-- Search input and Toggle icon -->
+                <ul class="nav navbar-top-links navbar-left">
+                    <li><a href="javascript:void(0)" class="open-close waves-effect waves-light"><i class="ti-menu"></i></a></li>
+
+                </ul>
+                <marquee class="blink" style="color: red; font-weight: bold; position: absolute; color: chartreuse;padding-top:1px;">Beta version going on ...</marquee>
+                <ul class="nav navbar-top-links navbar-right pull-right">
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#">
+                                <img src="/Member_Image/defaultmemImage.jpg" alt="user-img" width="40" height="40" class="img-circle" />
+                            <b class="hidden-xs">Rahul</b><span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user animated flipInY">
+                            <li>
+                                <div class="dw-user-box">
+
+                                    <div class="u-text">
+
+                                        <p class="text-muted">Rahul</p>
+                                        <p class="text-muted">
+ Last Login: 08-10-2022 23:06                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="/MyAccount/My-Profile"><i class="ti-user"></i> My Profile</a></li>
+                            <li><a href="/MyAccount/my-sponser"><i class="ti-eye"></i> My Sponser</a></li>
+
+                            <li><a href="/signin/logout"><i class="fa fa-power-off"></i> Logout</a></li>
+                        </ul>
+                        <!-- /.dropdown-user -->
+                    </li>
+                    <!-- /.dropdown -->
+                </ul>
+            </div>
+            <!-- /.navbar-header -->
+            <!-- /.navbar-top-links -->
+            <!-- /.navbar-static-side -->
+        </nav>
+        <!-- End Top Navigation -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <div class="navbar-default sidebar" role="navigation">
+            <div class="sidebar-nav slimscrollsidebar">
+                <div class="sidebar-head">
+                    <h3><span class="fa-fw open-close"><i class="ti-close ti-menu"></i></span> <span class="hide-menu">Navigation</span></h3> </div>
+                <div class="user-profile">
+                    <div class=" user-pro-body">
+                        <div>
+                        </div> 
+                    </div>
+                </div>
+                <ul class="nav" id="side-menu">
+                    <li>
+                        <a href="/MyAccount/Dashboard" class="waves-effect">
+                            <i class="mdi mdi-av-timer fa-fw" data-icon="v"></i>
+                            <span class="hide-menu"> Dashboard  </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/MyAccount/My-Profile" class="waves-effect">
+                            <i class="mdi mdi-account-box fa-fw" data-icon="v"></i>
+                            <span class="hide-menu"> My Profile  </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/myAccount/MyDownline" class="waves-effect">
+                            <i class="mdi mdi-sitemap fa-fw"></i> <span class="hide-menu">
+                                My Team
+                            </span>
+                        </a>
+                    </li>
+                    
+                    <li> <a href="/myAccount/promotionaltool" class="waves-effect"><i class="mdi mdi-clipboard-text fa-fw"></i> <span class="hide-menu">My Referral Link </span></a></li>
+                    <li>
+                        <a href="javascript:void(0);" class="waves-effect">
+                            <i class="mdi mdi-sale fa-fw" data-icon="v"></i> <span class="hide-menu">
+                                Promotional Tools
+                                <span class="fa arrow"></span>
+                            </span>
+                        </a>
+                        <ul class="nav nav-second-level">
+                            <li> <a href="/MyAccount/PromotionalTools/text"><span class="hide-menu">My Promotional Text</span></a> </li>
+                            <li> <a href="/MyAccount/PromotionalTools/banner"><span class="hide-menu">My Promotional Banner</span></a> </li>
+                            <li> <a href="/MyAccount/PromotionalTools/photo"><span class="hide-menu">My Promotional Photo</span></a> </li>
+                            <li> <a href="#"><span class="hide-menu">My Promotional Video</span></a> </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="waves-effect">
+                            <i class="mdi mdi-ticket fa-fw" data-icon="v"></i> <span class="hide-menu">
+                                Support
+                                <span class="fa arrow"></span>
+                            </span>
+                        </a>
+                        <ul class="nav nav-second-level">
+                            <li> <a href="/MyAccount/Create-Ticket"><span class="hide-menu">Create Ticket</span></a> </li>
+                            <li> <a href="/MyAccount/Ticket-List"><span class="hide-menu">Ticket History</span></a> </li>
+                        </ul>
+                    </li>
+                    <li> <a href="/myAccount/Testimonials" class="waves-effect"><i class="mdi mdi-content-copy fa-fw"></i> <span class="hide-menu">Member Review</span></a></li>
+                    <li> <a href="/myAccount/LatestNews" class="waves-effect"><i class="mdi mdi-newspaper fa-fw"></i> <span class="hide-menu">Latest News</span></a></li>
+                    <li> <a href="/myAccount/change-password" class="waves-effect"><i class="mdi mdi-account-key fa-fw"></i> <span class="hide-menu">Change Password</span></a></li>
+                    <li><a href="/signin/logout" class="waves-effect"><i class="mdi mdi-logout fa-fw"></i> <span class="hide-menu">Log out</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page Content -->
+        <!-- ============================================================== -->
+
+<style type="text/css">
+    .panel .panel-heading {
+        padding: 7px 25px;
+    }
+
+        .panel .panel-heading .panel-title {
+            color: #fff;
+        }
+
+    .grid a {
+        text-decoration: none;
+    }
+
+    .clsfooter td {
+        color: green;
+        font-weight: bold;
+    }
+
+    .banner {
+        font-size: 18px;
+    }
+
+        .banner a {
+            color: blue;
+        }
+
+        .banner span {
+            left: 0;
+            float: left;
+            padding: 10px 0px 0px 20px
+        }
+
+    .form-control {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    .copyCode {
+        margin-top: 5px;
+    }
+
+    .downloadImage {
+        margin-top: 5px;
+    }
+</style>
+
+<div id="page-wrapper">
+    <div class="container-fluid">
+        <div class="row bg-title">
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                <h4 class="page-title">My Promotional Photos</h4>
+            </div>
+        </div>
+        <!-- /.row -->
+        <!-- .row -->
+
+            <div id="500">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-border panel-success">
+                                
+                                <div class="panel-body text-center">
+                                    <a target="_blank" href="https://dapp4u.biz/Register/Rahul"> <img src='https://dapp4u.biz/Photos/1.jpg'></a>
+                                    <input type="text" class="form-control" value="<a href='https://dapp4u.biz/Register/Rahul'> <img src='https://dapp4u.biz/Photos/1.jpg'></a>" />
+                                    <a class="btn btn-default downloadImage" href="/PromotionalTools/DownloadBanner?ImageName=/Photos/1.jpg" 
+                                       target="_blank">Download Photo</a>
+                                    <a class="btn btn-default copyCode">Copy Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-border panel-success">
+                                
+                                <div class="panel-body text-center">
+                                    <a target="_blank" href="https://dapp4u.biz/Register/Rahul"> <img src='https://dapp4u.biz/Photos/10.jpg'></a>
+                                    <input type="text" class="form-control" value="<a href='https://dapp4u.biz/Register/Rahul'> <img src='https://dapp4u.biz/Photos/10.jpg'></a>" />
+                                    <a class="btn btn-default downloadImage" href="/PromotionalTools/DownloadBanner?ImageName=/Photos/10.jpg" 
+                                       target="_blank">Download Photo</a>
+                                    <a class="btn btn-default copyCode">Copy Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-border panel-success">
+                                
+                                <div class="panel-body text-center">
+                                    <a target="_blank" href="https://dapp4u.biz/Register/Rahul"> <img src='https://dapp4u.biz/Photos/11.jpg'></a>
+                                    <input type="text" class="form-control" value="<a href='https://dapp4u.biz/Register/Rahul'> <img src='https://dapp4u.biz/Photos/11.jpg'></a>" />
+                                    <a class="btn btn-default downloadImage" href="/PromotionalTools/DownloadBanner?ImageName=/Photos/11.jpg" 
+                                       target="_blank">Download Photo</a>
+                                    <a class="btn btn-default copyCode">Copy Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-border panel-success">
+                                
+                                <div class="panel-body text-center">
+                                    <a target="_blank" href="https://dapp4u.biz/Register/Rahul"> <img src='https://dapp4u.biz/Photos/12.jpg'></a>
+                                    <input type="text" class="form-control" value="<a href='https://dapp4u.biz/Register/Rahul'> <img src='https://dapp4u.biz/Photos/12.jpg'></a>" />
+                                    <a class="btn btn-default downloadImage" href="/PromotionalTools/DownloadBanner?ImageName=/Photos/12.jpg" 
+                                       target="_blank">Download Photo</a>
+                                    <a class="btn btn-default copyCode">Copy Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-border panel-success">
+                                
+                                <div class="panel-body text-center">
+                                    <a target="_blank" href="https://dapp4u.biz/Register/Rahul"> <img src='https://dapp4u.biz/Photos/13.jpg'></a>
+                                    <input type="text" class="form-control" value="<a href='https://dapp4u.biz/Register/Rahul'> <img src='https://dapp4u.biz/Photos/13.jpg'></a>" />
+                                    <a class="btn btn-default downloadImage" href="/PromotionalTools/DownloadBanner?ImageName=/Photos/13.jpg" 
+                                       target="_blank">Download Photo</a>
+                                    <a class="btn btn-default copyCode">Copy Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-border panel-success">
+                                
+                                <div class="panel-body text-center">
+                                    <a target="_blank" href="https://dapp4u.biz/Register/Rahul"> <img src='https://dapp4u.biz/Photos/14.jpg'></a>
+                                    <input type="text" class="form-control" value="<a href='https://dapp4u.biz/Register/Rahul'> <img src='https://dapp4u.biz/Photos/14.jpg'></a>" />
+                                    <a class="btn btn-default downloadImage" href="/PromotionalTools/DownloadBanner?ImageName=/Photos/14.jpg" 
+                                       target="_blank">Download Photo</a>
+                                    <a class="btn btn-default copyCode">Copy Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-border panel-success">
+                                
+                                <div class="panel-body text-center">
+                                    <a target="_blank" href="https://dapp4u.biz/Register/Rahul"> <img src='https://dapp4u.biz/Photos/15.jpg'></a>
+                                    <input type="text" class="form-control" value="<a href='https://dapp4u.biz/Register/Rahul'> <img src='https://dapp4u.biz/Photos/15.jpg'></a>" />
+                                    <a class="btn btn-default downloadImage" href="/PromotionalTools/DownloadBanner?ImageName=/Photos/15.jpg" 
+                                       target="_blank">Download Photo</a>
+                                    <a class="btn btn-default copyCode">Copy Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-border panel-success">
+                                
+                                <div class="panel-body text-center">
+                                    <a target="_blank" href="https://dapp4u.biz/Register/Rahul"> <img src='https://dapp4u.biz/Photos/16.jpg'></a>
+                                    <input type="text" class="form-control" value="<a href='https://dapp4u.biz/Register/Rahul'> <img src='https://dapp4u.biz/Photos/16.jpg'></a>" />
+                                    <a class="btn btn-default downloadImage" href="/PromotionalTools/DownloadBanner?ImageName=/Photos/16.jpg" 
+                                       target="_blank">Download Photo</a>
+                                    <a class="btn btn-default copyCode">Copy Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-border panel-success">
+                                
+                                <div class="panel-body text-center">
+                                    <a target="_blank" href="https://dapp4u.biz/Register/Rahul"> <img src='https://dapp4u.biz/Photos/17.jpg'></a>
+                                    <input type="text" class="form-control" value="<a href='https://dapp4u.biz/Register/Rahul'> <img src='https://dapp4u.biz/Photos/17.jpg'></a>" />
+                                    <a class="btn btn-default downloadImage" href="/PromotionalTools/DownloadBanner?ImageName=/Photos/17.jpg" 
+                                       target="_blank">Download Photo</a>
+                                    <a class="btn btn-default copyCode">Copy Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-border panel-success">
+                                
+                                <div class="panel-body text-center">
+                                    <a target="_blank" href="https://dapp4u.biz/Register/Rahul"> <img src='https://dapp4u.biz/Photos/18.jpg'></a>
+                                    <input type="text" class="form-control" value="<a href='https://dapp4u.biz/Register/Rahul'> <img src='https://dapp4u.biz/Photos/18.jpg'></a>" />
+                                    <a class="btn btn-default downloadImage" href="/PromotionalTools/DownloadBanner?ImageName=/Photos/18.jpg" 
+                                       target="_blank">Download Photo</a>
+                                    <a class="btn btn-default copyCode">Copy Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-border panel-success">
+                                
+                                <div class="panel-body text-center">
+                                    <a target="_blank" href="https://dapp4u.biz/Register/Rahul"> <img src='https://dapp4u.biz/Photos/19.jpg'></a>
+                                    <input type="text" class="form-control" value="<a href='https://dapp4u.biz/Register/Rahul'> <img src='https://dapp4u.biz/Photos/19.jpg'></a>" />
+                                    <a class="btn btn-default downloadImage" href="/PromotionalTools/DownloadBanner?ImageName=/Photos/19.jpg" 
+                                       target="_blank">Download Photo</a>
+                                    <a class="btn btn-default copyCode">Copy Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-border panel-success">
+                                
+                                <div class="panel-body text-center">
+                                    <a target="_blank" href="https://dapp4u.biz/Register/Rahul"> <img src='https://dapp4u.biz/Photos/2.jpg'></a>
+                                    <input type="text" class="form-control" value="<a href='https://dapp4u.biz/Register/Rahul'> <img src='https://dapp4u.biz/Photos/2.jpg'></a>" />
+                                    <a class="btn btn-default downloadImage" href="/PromotionalTools/DownloadBanner?ImageName=/Photos/2.jpg" 
+                                       target="_blank">Download Photo</a>
+                                    <a class="btn btn-default copyCode">Copy Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-border panel-success">
+                                
+                                <div class="panel-body text-center">
+                                    <a target="_blank" href="https://dapp4u.biz/Register/Rahul"> <img src='https://dapp4u.biz/Photos/20.jpg'></a>
+                                    <input type="text" class="form-control" value="<a href='https://dapp4u.biz/Register/Rahul'> <img src='https://dapp4u.biz/Photos/20.jpg'></a>" />
+                                    <a class="btn btn-default downloadImage" href="/PromotionalTools/DownloadBanner?ImageName=/Photos/20.jpg" 
+                                       target="_blank">Download Photo</a>
+                                    <a class="btn btn-default copyCode">Copy Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-border panel-success">
+                                
+                                <div class="panel-body text-center">
+                                    <a target="_blank" href="https://dapp4u.biz/Register/Rahul"> <img src='https://dapp4u.biz/Photos/21.jpg'></a>
+                                    <input type="text" class="form-control" value="<a href='https://dapp4u.biz/Register/Rahul'> <img src='https://dapp4u.biz/Photos/21.jpg'></a>" />
+                                    <a class="btn btn-default downloadImage" href="/PromotionalTools/DownloadBanner?ImageName=/Photos/21.jpg" 
+                                       target="_blank">Download Photo</a>
+                                    <a class="btn btn-default copyCode">Copy Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-border panel-success">
+                                
+                                <div class="panel-body text-center">
+                                    <a target="_blank" href="https://dapp4u.biz/Register/Rahul"> <img src='https://dapp4u.biz/Photos/22.jpg'></a>
+                                    <input type="text" class="form-control" value="<a href='https://dapp4u.biz/Register/Rahul'> <img src='https://dapp4u.biz/Photos/22.jpg'></a>" />
+                                    <a class="btn btn-default downloadImage" href="/PromotionalTools/DownloadBanner?ImageName=/Photos/22.jpg" 
+                                       target="_blank">Download Photo</a>
+                                    <a class="btn btn-default copyCode">Copy Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-border panel-success">
+                                
+                                <div class="panel-body text-center">
+                                    <a target="_blank" href="https://dapp4u.biz/Register/Rahul"> <img src='https://dapp4u.biz/Photos/23.jpg'></a>
+                                    <input type="text" class="form-control" value="<a href='https://dapp4u.biz/Register/Rahul'> <img src='https://dapp4u.biz/Photos/23.jpg'></a>" />
+                                    <a class="btn btn-default downloadImage" href="/PromotionalTools/DownloadBanner?ImageName=/Photos/23.jpg" 
+                                       target="_blank">Download Photo</a>
+                                    <a class="btn btn-default copyCode">Copy Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-border panel-success">
+                                
+                                <div class="panel-body text-center">
+                                    <a target="_blank" href="https://dapp4u.biz/Register/Rahul"> <img src='https://dapp4u.biz/Photos/24.jpg'></a>
+                                    <input type="text" class="form-control" value="<a href='https://dapp4u.biz/Register/Rahul'> <img src='https://dapp4u.biz/Photos/24.jpg'></a>" />
+                                    <a class="btn btn-default downloadImage" href="/PromotionalTools/DownloadBanner?ImageName=/Photos/24.jpg" 
+                                       target="_blank">Download Photo</a>
+                                    <a class="btn btn-default copyCode">Copy Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-border panel-success">
+                                
+                                <div class="panel-body text-center">
+                                    <a target="_blank" href="https://dapp4u.biz/Register/Rahul"> <img src='https://dapp4u.biz/Photos/25.jpg'></a>
+                                    <input type="text" class="form-control" value="<a href='https://dapp4u.biz/Register/Rahul'> <img src='https://dapp4u.biz/Photos/25.jpg'></a>" />
+                                    <a class="btn btn-default downloadImage" href="/PromotionalTools/DownloadBanner?ImageName=/Photos/25.jpg" 
+                                       target="_blank">Download Photo</a>
+                                    <a class="btn btn-default copyCode">Copy Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-border panel-success">
+                                
+                                <div class="panel-body text-center">
+                                    <a target="_blank" href="https://dapp4u.biz/Register/Rahul"> <img src='https://dapp4u.biz/Photos/26.jpg'></a>
+                                    <input type="text" class="form-control" value="<a href='https://dapp4u.biz/Register/Rahul'> <img src='https://dapp4u.biz/Photos/26.jpg'></a>" />
+                                    <a class="btn btn-default downloadImage" href="/PromotionalTools/DownloadBanner?ImageName=/Photos/26.jpg" 
+                                       target="_blank">Download Photo</a>
+                                    <a class="btn btn-default copyCode">Copy Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-border panel-success">
+                                
+                                <div class="panel-body text-center">
+                                    <a target="_blank" href="https://dapp4u.biz/Register/Rahul"> <img src='https://dapp4u.biz/Photos/27.jpg'></a>
+                                    <input type="text" class="form-control" value="<a href='https://dapp4u.biz/Register/Rahul'> <img src='https://dapp4u.biz/Photos/27.jpg'></a>" />
+                                    <a class="btn btn-default downloadImage" href="/PromotionalTools/DownloadBanner?ImageName=/Photos/27.jpg" 
+                                       target="_blank">Download Photo</a>
+                                    <a class="btn btn-default copyCode">Copy Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-border panel-success">
+                                
+                                <div class="panel-body text-center">
+                                    <a target="_blank" href="https://dapp4u.biz/Register/Rahul"> <img src='https://dapp4u.biz/Photos/28.jpg'></a>
+                                    <input type="text" class="form-control" value="<a href='https://dapp4u.biz/Register/Rahul'> <img src='https://dapp4u.biz/Photos/28.jpg'></a>" />
+                                    <a class="btn btn-default downloadImage" href="/PromotionalTools/DownloadBanner?ImageName=/Photos/28.jpg" 
+                                       target="_blank">Download Photo</a>
+                                    <a class="btn btn-default copyCode">Copy Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-border panel-success">
+                                
+                                <div class="panel-body text-center">
+                                    <a target="_blank" href="https://dapp4u.biz/Register/Rahul"> <img src='https://dapp4u.biz/Photos/3.jpg'></a>
+                                    <input type="text" class="form-control" value="<a href='https://dapp4u.biz/Register/Rahul'> <img src='https://dapp4u.biz/Photos/3.jpg'></a>" />
+                                    <a class="btn btn-default downloadImage" href="/PromotionalTools/DownloadBanner?ImageName=/Photos/3.jpg" 
+                                       target="_blank">Download Photo</a>
+                                    <a class="btn btn-default copyCode">Copy Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-border panel-success">
+                                
+                                <div class="panel-body text-center">
+                                    <a target="_blank" href="https://dapp4u.biz/Register/Rahul"> <img src='https://dapp4u.biz/Photos/4.jpg'></a>
+                                    <input type="text" class="form-control" value="<a href='https://dapp4u.biz/Register/Rahul'> <img src='https://dapp4u.biz/Photos/4.jpg'></a>" />
+                                    <a class="btn btn-default downloadImage" href="/PromotionalTools/DownloadBanner?ImageName=/Photos/4.jpg" 
+                                       target="_blank">Download Photo</a>
+                                    <a class="btn btn-default copyCode">Copy Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-border panel-success">
+                                
+                                <div class="panel-body text-center">
+                                    <a target="_blank" href="https://dapp4u.biz/Register/Rahul"> <img src='https://dapp4u.biz/Photos/5.jpg'></a>
+                                    <input type="text" class="form-control" value="<a href='https://dapp4u.biz/Register/Rahul'> <img src='https://dapp4u.biz/Photos/5.jpg'></a>" />
+                                    <a class="btn btn-default downloadImage" href="/PromotionalTools/DownloadBanner?ImageName=/Photos/5.jpg" 
+                                       target="_blank">Download Photo</a>
+                                    <a class="btn btn-default copyCode">Copy Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-border panel-success">
+                                
+                                <div class="panel-body text-center">
+                                    <a target="_blank" href="https://dapp4u.biz/Register/Rahul"> <img src='https://dapp4u.biz/Photos/6.jpg'></a>
+                                    <input type="text" class="form-control" value="<a href='https://dapp4u.biz/Register/Rahul'> <img src='https://dapp4u.biz/Photos/6.jpg'></a>" />
+                                    <a class="btn btn-default downloadImage" href="/PromotionalTools/DownloadBanner?ImageName=/Photos/6.jpg" 
+                                       target="_blank">Download Photo</a>
+                                    <a class="btn btn-default copyCode">Copy Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-border panel-success">
+                                
+                                <div class="panel-body text-center">
+                                    <a target="_blank" href="https://dapp4u.biz/Register/Rahul"> <img src='https://dapp4u.biz/Photos/7.jpg'></a>
+                                    <input type="text" class="form-control" value="<a href='https://dapp4u.biz/Register/Rahul'> <img src='https://dapp4u.biz/Photos/7.jpg'></a>" />
+                                    <a class="btn btn-default downloadImage" href="/PromotionalTools/DownloadBanner?ImageName=/Photos/7.jpg" 
+                                       target="_blank">Download Photo</a>
+                                    <a class="btn btn-default copyCode">Copy Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-border panel-success">
+                                
+                                <div class="panel-body text-center">
+                                    <a target="_blank" href="https://dapp4u.biz/Register/Rahul"> <img src='https://dapp4u.biz/Photos/8.jpg'></a>
+                                    <input type="text" class="form-control" value="<a href='https://dapp4u.biz/Register/Rahul'> <img src='https://dapp4u.biz/Photos/8.jpg'></a>" />
+                                    <a class="btn btn-default downloadImage" href="/PromotionalTools/DownloadBanner?ImageName=/Photos/8.jpg" 
+                                       target="_blank">Download Photo</a>
+                                    <a class="btn btn-default copyCode">Copy Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="panel panel-border panel-success">
+                                
+                                <div class="panel-body text-center">
+                                    <a target="_blank" href="https://dapp4u.biz/Register/Rahul"> <img src='https://dapp4u.biz/Photos/9.jpg'></a>
+                                    <input type="text" class="form-control" value="<a href='https://dapp4u.biz/Register/Rahul'> <img src='https://dapp4u.biz/Photos/9.jpg'></a>" />
+                                    <a class="btn btn-default downloadImage" href="/PromotionalTools/DownloadBanner?ImageName=/Photos/9.jpg" 
+                                       target="_blank">Download Photo</a>
+                                    <a class="btn btn-default copyCode">Copy Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+    </div>
+</div>
+
+<script src="/js/jquery.js"></script>
+<script src="/Scripts/jquery-1.8.2.min.js"></script>
+<script type="text/javascript">
+    function copyToClipboard(text_val) {
+
+        var $temp = $("<textarea>");
+        var brRegex = /<br\s*[\/]?>/gi;
+        $("body").append($temp);
+        $temp.val(text_val.replace(brRegex, "\r\n")).select();
+        document.execCommand("copy");
+        $temp.remove();
+
+    }
+
+    $(document).ready(function () {
+        $(".copyCode").click(function (e) {
+            copyToClipboard(($(this).parent('div').find('input')).val().trim());
+            $(".copyCode").removeClass("btn-warning").addClass("btn-default");
+            $(this).addClass("btn-warning").removeClass("btn-default");
+        });
+
+    });
+</script>
+        
+
+
+     <div class="modal fade" id="SuccessModel" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+     <div class="modal-dialog">
+	 <div class="modal-content">
+		<div class="modal-header">
+			<button type="button" id="closeSuccess" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>	
+		</div>
+			<div class="modal-body">
+			 <h3 class="text-success"><i class="fa fa-thumbs-up"></i> <label id="SuccessTitle"></label> </h3>
+              <div class="alert alert-success"  id="SuccessMsg">
+     
+              </div>
+      
+		</div>
+		
+	 </div>
+    </div>
+</div>
+
+     <div class="modal fade" id="ErrorModel" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+     <div class="modal-dialog">
+	 <div class="modal-content">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>	
+		</div>
+		<div class="modal-body">
+			 <h3 class="text-success"><i class="fa fa-thumbs-down"></i> <label id="ErrorTitle"></label> </h3>
+              <div class="alert alert-danger"  id="ErrorMsg">
+     
+              </div>
+		</div>
+		
+	 </div>
+    </div>
+</div>
+          <div id="divProgressBar" ></div>
+
+        <!-- ============================================================== -->
+        <!-- End Page Content -->
+        <!-- ============================================================== -->
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="/MemberContent/plugins/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/MemberContent/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Menu Plugin JavaScript -->
+    <script src="/MemberContent/plugins/bower_components/sidebar-nav/dist/sidebar-nav.min.js"></script>
+    <!--slimscroll JavaScript -->
+    <script src="/MemberContent/js/jquery.slimscroll.js"></script>
+    <!--Wave Effects -->
+    <script src="/MemberContent/js/waves.js"></script>
+    <!--Counter js -->
+    <script src="/MemberContent/plugins/bower_components/waypoints/lib/jquery.waypoints.js"></script>
+    <script src="/MemberContent/plugins/bower_components/counterup/jquery.counterup.min.js"></script>
+    <!-- chartist chart -->
+    <script src="/MemberContent/plugins/bower_components/chartist-js/dist/chartist.min.js"></script>
+    <script src="/MemberContent/plugins/bower_components/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.min.js"></script>
+    <!-- Sparkline chart JavaScript -->
+    <script src="/MemberContent/plugins/bower_components/jquery-sparkline/jquery.sparkline.min.js"></script>
+    <!-- Custom Theme JavaScript -->
+    <script src="/MemberContent/js/custom.min.js"></script>
+    <script src="/MemberContent/js/dashboard1.js"></script>
+    <script src="/MemberContent/plugins/bower_components/toast-master/js/jquery.toast.js"></script>
+<script src="/Scripts/common_function.js"></script>
+</body>
+
+
+<script src="/Scripts/common_function.js"></script>
+</html>
