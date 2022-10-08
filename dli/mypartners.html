@@ -274,7 +274,7 @@
             else{
                 const response = await fetch('https://dapp4u.biz/api/PlanManager/EncryptRef?RefId=' + arr[1]);
                 const myJson = await response.json(); //extract JSON from the http response
-                $("#refLink2").val("https://dli.dapp4u.live/?ref="+myJson);
+                $("#refLink2").val("https://dapp4u.live/dli/?ref="+myJson);
                 $("#refLink2").show();
                 $("#lblRef").html("");
                 $("#btnCopy").show();
